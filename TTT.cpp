@@ -74,10 +74,10 @@ pair<int, int> cpuLogic() {
         }
     }
 
-    if(blockPlayer.first != -1) //blocking player from winning if possible after the full loop is finished and the cpu couldnt win
+    if(blockPlayer.first != -1) //blocking player from winning if possible after the cpu couldnt win
         return blockPlayer; 
     
-    else if(possibleWinLine.first != -1) //fill one cell in combination that can be now possibly be won next round
+    else if(possibleWinLine.first != -1) //fill one cell in combination that can possibly be won next round
         return possibleWinLine; 
     
 
@@ -141,7 +141,8 @@ void printBoard() {
 int main() {
 
     while(true) { //main loop
-    
+        roundsPlayed = 0; 
+
         initializeGame();
         printBoard(); 
 
