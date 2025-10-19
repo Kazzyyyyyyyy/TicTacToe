@@ -4,7 +4,7 @@ First C++ projekt (did 6 leetcode problems before this): simple TTT.
 Index to play: 1 - 3.
 First enter Y, second X.
 
-CPU starts.
+Player starts.
 CPU moves are not random. 
 
 CPU does moves (if possible) in order: 
