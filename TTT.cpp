@@ -12,7 +12,7 @@ const char freeCellChar = '+', playerChar = 'X', cpuChar = 'O';
 int roundsPlayed = 0;
 
 enum GameStates { PLAYER_TURN, CPU_TURN };
-GameStates currGameState = PLAYER_TURN;
+GameStates currGameState = CPU_TURN; //-> beginner
 
 const vector<vector<pair<int, int>>> winConditions {
     //horizontal
@@ -167,7 +167,7 @@ int main() {
                         continue; //new input
                     }
                     
-                    //out of bounds and that the cell is free check
+                    //out of bounds and that the cell is free - check
                     if(!(0 <= playerY <= 2 && 0 <= playerX <= 2) || board[playerY][playerX] != freeCellChar) 
                         continue; //new input
                     
